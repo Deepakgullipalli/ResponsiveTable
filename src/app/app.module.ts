@@ -20,6 +20,9 @@ import {DropdownModule} from 'primeng/dropdown';
 import {ProgressBarModule} from 'primeng/progressbar';
 import {InputTextModule} from 'primeng/inputtext';
 import {RatingModule} from 'primeng/rating';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { InputsModule } from '@progress/kendo-angular-inputs';
+import { TreeViewModule } from '@progress/kendo-angular-treeview';
 
 @NgModule({
   imports: [
@@ -42,7 +45,10 @@ import {RatingModule} from 'primeng/rating';
     RouterModule.forRoot([
       {path:'',component: AppComponent}
 
-		])
+		]),
+    NgbModule,
+    InputsModule,
+    TreeViewModule
   ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ],
